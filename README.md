@@ -9,7 +9,7 @@ A starter configuration file to alleviate some initial Git issues.
 1. Clone or download this repo.
 2. Move the file `.gitconfig` into your home directory.
 
-### If You Have A `.Gitconfig` File Already
+### If You Have A Git Config File Already
 
 Unless you know enough Git to be attached to the settings you have already, replace it with this one.
 
