@@ -30,3 +30,17 @@ git config --global user.email "[your email goes here]"
 
 When you're done, open your `.gitconfig` file, and it should look something like this:
 
+```sh
+[core]
+	ignorecase = false # prevents a case mismatch between your local filesystem and Git
+	editor = $(which code) # so that `git commit` opens VS Code instead of Vim
+[init]
+	defaultBranch = main # the current standard branch name
+[pull]
+	rebase = false # which method to use for `git pull`
+[credential]
+	helper = osxkeychain
+[user]
+	name = Colin Jaffe
+	email = balloonasaurus@gmail.com
+```
