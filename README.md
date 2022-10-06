@@ -33,7 +33,7 @@ When you're done, open your `.gitconfig` file, and it should look something like
 ```sh
 [core]
 	ignorecase = false # prevents a case mismatch between your local filesystem and Git
-	editor = $(which code) # so that `git commit` opens VS Code instead of Vim
+	editor = $(which code) -w # so that `git commit` opens VS Code instead of Vim
 [init]
 	defaultBranch = main # the current standard branch name
 [pull]
