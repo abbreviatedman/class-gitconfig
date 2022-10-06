@@ -6,4 +6,4 @@
 [pull]
 	rebase = false # which method to use for `git pull`
 [credential]
-	helper = osxkeychain
+	helper = osxkeychain # cache your personal access token in the macOS keychain
