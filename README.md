@@ -1,6 +1,6 @@
 # Class Gitconfig
 
-A starter configuration file to alleviate some initial git issues.
+A starter configuration file to alleviate some initial Git issues.
 
 ## Installation
 
