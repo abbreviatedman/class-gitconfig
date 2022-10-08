@@ -6,8 +6,9 @@ A starter configuration file to alleviate some initial Git issues.
 
 ### Happy Path
 
-1. Clone or download this repo.
-2. Move the file `.gitconfig` into your home directory.
+1. Clone or download this repo to anywhere on your machine (`git clone https://github.com/abbreviatedman/class-gitconfig`).
+2. Navigate into the repo's directory (`cd class-gitconfig`). 
+2. Copy the file `.gitconfig` into your home directory (`cp .gitconfig ~`).
 
 ### If You Have A Git Config File Already
 
