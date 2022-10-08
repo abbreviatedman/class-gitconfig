@@ -52,6 +52,6 @@ As you can see, those `git config --global` lines added `name` and `email` keys 
 
 ## Final Words
 
-There will likely be other Git config settings you change over your career, but this will get you off to a good start. Additionally, you have now practiced configuring Git in two different ways—through examining the file and through the terminal command—and this should prepare you more for configuring it in the future.
+There will likely be other Git config settings you change over your career, but this will get you off to a good start. Additionally, you have now practiced configuring Git in two different ways—through changing the file directly and through the terminal command—and this should prepare you more for configuring it in the future.
 
 Happy hacking!
