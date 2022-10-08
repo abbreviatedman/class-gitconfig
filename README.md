@@ -26,14 +26,14 @@ Enter the two commands below into your terminal, from any directory, hitting ret
 
 For `[your name goes here]`, you should replace the words and the brackets with your name, and the same for the email line. For example, the last part of the first line would be, for _me_: `user.name "Colin Jaffe"`.
 
-``` sh
+```
 git config --global user.name "[your name goes here]"
 git config --global user.email "[your email goes here]"
 ```
 
-When you're done, open your `.gitconfig` file, and it should look something like this:
+When you're done, open your `.gitconfig` file in your editor of choice (VS Code is a great choice), and it should look something like this:
 
-```sh
+```git-config
 [core]
 	ignorecase = false # prevents a case mismatch between your local filesystem and Git
 	editor = $(which code) -w # so that `git commit` opens VS Code instead of Vim
