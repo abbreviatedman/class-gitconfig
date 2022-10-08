@@ -12,7 +12,9 @@ A starter configuration file to alleviate some initial Git issues.
 
 ### If You Have A Git Config File Already
 
-Unless you know enough Git to be attached to the settings you have already, replace it with this one.
+Unless you know enough Git to be attached to the `.gitconfig` file you have already, replace it with this repo's version.
+
+If this is the first time you're setting Git up and you don't know what we're talking about here, then _definitely_ replace any `.gitconfig` file you have with this one.
 
 ## Final Setup
 
