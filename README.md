@@ -48,10 +48,10 @@ When you're done, open your `.gitconfig` file in your editor of choice (VS Code 
 	email = balloonasaurus@gmail.com
 ```
 
-As you can see, those `git config --global` lines add `name` and `email` keys under the `user` section, with values set to what you entered in quotes. You could just as easily have edited the file itself.
+As you can see, those `git config --global` lines added `name` and `email` keys under the `user` section, with values set to what you entered in quotes. That's what the `git config` terminal command _does_ : edit this file.
 
 ## Final Words
 
-There may be other Git config settings you set over your career, but this will get you off to a good start. Additionally, you have now practiced configuring Git in two different ways, which should prepare you more for configuring it in the future.
+There will likely be other Git config settings you change over your career, but this will get you off to a good start. Additionally, you have now practiced configuring Git in two different ways—through examining the file and through the terminal command—and this should prepare you more for configuring it in the future.
 
 Happy hacking!
