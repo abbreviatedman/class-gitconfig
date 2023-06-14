@@ -48,7 +48,7 @@ When you're done, open your `.gitconfig` file in your editor of choice (VS Code 
 	email = balloonasaurus@gmail.com
 ```
 
-As you can see, those `git config --global` lines you entered earlier added `name` and `email` keys under the `user` section in this file, with values set to what you entered in quotes. That's what the `git config` terminal command _does_: edit this configuration file.
+As you can see, those `git config --global` lines you entered earlier added `name` and `email` sections under the `user` section in this file, with values set to what you entered in quotes. That's what the `git config` terminal command _does_: edit this configuration file.
 
 In the future, you can edit this file directly, or use the `git config` commands in your terminal.
 
