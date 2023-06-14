@@ -4,7 +4,7 @@ A starter configuration file to alleviate some initial Git issues.
 
 ## Installation
 
-### Happy Path
+### The Simplest Way
 
 1. Clone or download this repo to anywhere on your machine (`git clone https://github.com/abbreviatedman/class-gitconfig`).
 2. Navigate into the repo's directory (`cd class-gitconfig`). 
@@ -12,9 +12,9 @@ A starter configuration file to alleviate some initial Git issues.
 
 ### If You Have A Git Config File Already
 
-Unless you know enough Git to be attached to the `.gitconfig` file you have already, replace it with this repo's version.
+Unless you know enough Git to be attached to the `.gitconfig` file you have already, simply follow the steps in the previuos section to replace it with this repo's version. If you _do_ know plenty about Git and _are_ attached to your current `.gitconfig` file, then just check out the settings we have in here to see if you want to use any of them.
 
-If this is the first time you're setting Git up and you don't know what we're talking about here, then _definitely_ replace any `.gitconfig` file you have with this one.
+If this is the first time you're setting Git up and you don't know what we're talking about here, then _definitely_ follow the steps in the previous section to replace any `.gitconfig` file you have with this one.
 
 ## Final Setup
 
@@ -48,7 +48,7 @@ When you're done, open your `.gitconfig` file in your editor of choice (VS Code 
 	email = balloonasaurus@gmail.com
 ```
 
-As you can see, those `git config --global` lines added `name` and `email` keys under the `user` section, with values set to what you entered in quotes. That's what the `git config` terminal command _does_: edit this file.
+As you can see, those `git config --global` lines you entered earlier added `name` and `email` keys under the `user` section in this file, with values set to what you entered in quotes. That's what the `git config` terminal command _does_: edit this configuration file.
 
 ## Final Words
 
