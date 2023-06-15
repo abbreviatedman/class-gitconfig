@@ -12,15 +12,35 @@ A starter configuration file to alleviate some initial Git issues.
 
 ### If You Have A Git Config File Already
 
-Unless you know enough Git to be attached to the `.gitconfig` file you have already, simply follow the steps in the previuos section to replace it with this repo's version. If you _do_ know plenty about Git and _are_ attached to your current `.gitconfig` file, then just check out the settings we have in here to see if you want to use any of them.
+Unless you know enough Git to be attached to the `.gitconfig` file you have already, simply follow the steps in the previous section to replace it with this repo's version. If you _do_ know plenty about Git and _are_ attached to your current `.gitconfig` file, then just check out the settings we have in here to see if you want to use any of them.
 
-If this is the first time you're setting Git up and you don't know what we're talking about here, then _definitely_ follow the steps in the previous section to replace any `.gitconfig` file you have with this one.
+If this is the first time you're setting Git up and you don't know what we're talking about here, then _definitely_ follow the steps in the previous section to replace any `.gitconfig` file you have with the one from this repository.
 
-## Final Setup
+## Configuration
 
 There are two settings that should be different for each user: their name and email. Contributors to codebases need to know who you are, and Git WILL complain if you don't have your name and email as part of your setup.
 
-The command-line way to configure these settings is usually the recommended method, though you _could_ edit your `.gitconfig` file directly. We'll use the command line.
+The command-line way to configure these settings is usually the recommended method, though you _could_ edit your `.gitconfig` file directly. We'll use the command line, but first, let's open the file in your favorite editor.
+
+### Opening The File
+
+For VS Code, enter the following command on the command line: `code ~/.gitconfig`. If you're using another editor, you probably know how to open the file.
+
+Once you have the file open, it should look like this:
+
+```git-config
+[core]
+	ignorecase = false # prevents a case mismatch between your local filesystem and Git
+	editor = $(which code) -w # so that `git commit` opens VS Code instead of Vim
+[init]
+	defaultBranch = main # the current standard branch name
+[pull]
+	rebase = false # which method to use for `git pull`
+```
+
+We'll be editing the file indirectly via the terminal, but you'll see the change happen in this file.
+
+### Editing The File In The Terminal
 
 Enter the two commands below into your terminal, from any directory, hitting return after each line.
 
@@ -31,7 +51,7 @@ git config --global user.name "[your name goes here]"
 git config --global user.email "[your email goes here]"
 ```
 
-When you're done, open your `.gitconfig` file in your editor of choice (VS Code is a great choice), and it should look something like this:
+When you're done, switch back to your editor where you opened the `.gitconfig` file. It should look something like this, but with your email and username.
 
 ```git-config
 [core]
@@ -46,7 +66,7 @@ When you're done, open your `.gitconfig` file in your editor of choice (VS Code 
 	email = balloonasaurus@gmail.com
 ```
 
-As you can see, those `git config --global` lines you entered earlier added `name` and `email` sections under the `user` section in this file, with values set to what you entered in quotes. That's what the `git config` terminal command _does_: edit this configuration file.
+As you can see, those `git config --global` lines you entered earlier added `name` and `email` sections under the `user` section in this file, with values set to what you entered in quotes in the terminal. That's what the `git config` terminal command _does_: edit this configuration file.
 
 In the future, you can edit this file directly, or use the `git config` commands in your terminal.
 
