@@ -41,8 +41,6 @@ When you're done, open your `.gitconfig` file in your editor of choice (VS Code 
 	defaultBranch = main # the current standard branch name
 [pull]
 	rebase = false # which method to use for `git pull`
-[credential]
-	helper = osxkeychain # cache your personal access token in the macOS keychain
 [user]
 	name = Colin Jaffe
 	email = balloonasaurus@gmail.com
