@@ -2,27 +2,27 @@
 
 A starter configuration file to alleviate some initial Git issues.
 
-## Installation
+### Installation
 
-### The Simplest Way
+##### The Simplest Way
 
 1. Clone or download this repo to anywhere on your machine (`git clone https://github.com/abbreviatedman/class-gitconfig`).
 2. Navigate into the repo's directory (`cd class-gitconfig`). 
 2. Copy the file `.gitconfig` into your home directory (`cp .gitconfig ~`).
 
-### If You Have A Git Config File Already
+##### If You Have A Git Config File Already
 
 Unless you know enough Git to be attached to the `.gitconfig` file you have already, simply follow the steps in the previous section to replace it with this repo's version. If you _do_ know plenty about Git and _are_ attached to your current `.gitconfig` file, then just check out the settings we have in here to see if you want to use any of them.
 
 If this is the first time you're setting Git up and you don't know what we're talking about here, then _definitely_ follow the steps in the previous section to replace any `.gitconfig` file you have with the one from this repository.
 
-## Configuration
+### Configuration
 
 There are two settings that should be different for each user: their name and email. Contributors to codebases need to know who you are, and Git WILL complain if you don't have your name and email as part of your setup.
 
 The command-line way to configure these settings is usually the recommended method, though you _could_ edit your `.gitconfig` file directly. We'll use the command line, but first, let's open the file in your favorite editor.
 
-### Opening The File
+##### Viewing The File
 
 For VS Code, enter the following command on the command line: `code ~/.gitconfig`. If you're using another editor, you probably know how to open the file.
 
@@ -40,7 +40,7 @@ Once you have the file open, it should look like this:
 
 We'll be editing the file indirectly via the terminal, but you'll see the change happen in this file.
 
-### Editing The File In The Terminal
+##### Editing The File In The Terminal
 
 Enter the two commands below into your terminal, from any directory, hitting return after each line.
 
@@ -70,7 +70,7 @@ As you can see, those `git config --global` lines you entered earlier added `nam
 
 In the future, you can edit this file directly, or use the `git config` commands in your terminal.
 
-## Final Words
+### Final Words
 
 There will likely be other Git config settings you change over your career, but this will get you off to a good start. Additionally, you have now practiced configuring Git in two different ways—through changing the file directly and through the terminal command—and this should prepare you more for configuring it in the future.
 
