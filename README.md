@@ -20,13 +20,11 @@ If this is the first time you're setting Git up and you don't know what we're ta
 
 There are two settings that should be different for each user: their name and email. Contributors to codebases need to know who you are, and Git WILL complain if you don't have your name and email as part of your setup.
 
-The command-line way to configure these settings is usually the recommended method, though you _could_ edit your `.gitconfig` file directly. We'll use the command line, but first, let's open the file in your favorite editor.
+The command-line way to configure these settings is usually the recommended method, though you _could_ edit your `.gitconfig` file directly. We'll use the command line, but first, let's view the file to see what it looks like.
 
 ##### Viewing The File
 
-For VS Code, enter the following command on the command line: `code ~/.gitconfig`. If you're using another editor, you probably know how to open the file.
-
-Once you have the file open, it should look like this:
+To view the file, enter the command `cat ~/.gitconfig` in your terminal. This will print directly to the terminal the contents of the file you just copied into your home directory. It should look exactly like this:
 
 ```git-config
 [core]
@@ -38,20 +36,20 @@ Once you have the file open, it should look like this:
 	rebase = false # which method to use for `git pull`
 ```
 
-We'll be editing the file indirectly via the terminal, but you'll see the change happen in this file.
+We'll be editing the file indirectly via the terminal, but you'll see the change happen in this file. We'll check it with `cat` again later, but you can view it directly in your text editor if you want!
 
 ##### Editing The File In The Terminal
 
 Enter the two commands below into your terminal, from any directory, hitting return after each line.
 
-For `[your name goes here]`, you should replace the words and the brackets with your name, and the same for the email line. For example, the last part of the first line would be, for _me_: `user.name "Colin Jaffe"`.
+For `[your name goes here]`, you should replace the words _and_ the brackets with your name, and the same for the email line. For example, the last part of the first line would be, for _me_: `user.name "Colin Jaffe"`.
 
 ```
 git config --global user.name "[your name goes here]"
 git config --global user.email "[your email goes here]"
 ```
 
-When you're done, switch back to your editor where you opened the `.gitconfig` file. It should look something like this, but with your email and username.
+When you're done, enter the command `cat ~/.gitconfig` again to view how the file has changed. (If you opened the file in a text editor, switch back and it will likely simply have changed while you weren't looking.) It should look exactly like this, except with _your_ name and email address.
 
 ```git-config
 [core]
@@ -68,10 +66,10 @@ When you're done, switch back to your editor where you opened the `.gitconfig` f
 
 As you can see, those `git config --global` lines you entered earlier added `name` and `email` sections under the `user` section in this file, with values set to what you entered in quotes in the terminal. That's what the `git config` terminal command _does_: edit this configuration file.
 
-In the future, you can edit this file directly, or use the `git config` commands in your terminal.
+In the future, you can edit this file directly, or use the `git config --global` commands in your terminal.
 
 ### Final Words
 
-There will likely be other Git config settings you change over your career, but this will get you off to a good start. Additionally, you have now practiced configuring Git in two different ways—through changing the file directly and through the terminal command—and this should prepare you more for configuring it in the future.
+There will likely be other Git config settings you change over your career, but this will get you off to a good start. Additionally, you have now seen that you can configure Git in two different ways—through changing the file directly and through the terminal command—and this should prepare you more for configuring it in the future.
 
 Happy hacking!
